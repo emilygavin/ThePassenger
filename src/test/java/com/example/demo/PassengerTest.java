@@ -35,17 +35,17 @@ class PassengerTest {
 		assertThat(passengerController.fetchAllPassengers().get(0)).isEqualTo(passenger);
 	}
 
-//	@Test
-//	public void testCreateNewPassenger(){
-//		Passenger passenger = new Passenger();
-//		passenger.setAge(25);
-//		passenger.setName("Elton John");
-//		passenger.setTitle("Mr");
-//		passenger.setPhoneNumber("083218491325");
-//		passenger.setID("ijg938hg93h4gi49yu4");
-//
-//		assertThat(passengerController.registerNewPassenger(passenger)).isEqualTo("1234");
-//	}
+	@Test
+	public void testCreateNewPassenger(){
+		Passenger passenger = new Passenger();
+		passenger.setAge(45);
+		passenger.setName("Michael Jackson");
+		passenger.setTitle("Mr");
+		passenger.setPhoneNumber("087468648171");
+		passenger.setID("93hjhb837gvb280v834");
+
+		assertThat(passengerController.registerNewPassenger(passenger)).isEqualTo(passenger);
+	}
 
 	@Test
 	public void testCreateNewPassengerWithDuplicateIDError(){
