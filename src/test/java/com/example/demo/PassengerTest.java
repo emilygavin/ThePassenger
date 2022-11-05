@@ -130,7 +130,7 @@ class PassengerTest {
 		passenger.setName("Macklemore");
 		passenger.setTitle("Mister");
 		passenger.setPhoneNumber("0838947592833");
-		passenger.setID("82euhvog2uy4ghv3674v9");
+		passenger.setID("3049u8g3uhvim28h374g");
 
 		Exception exception = assertThrows(IllegalStateException.class, () -> {
 			passengerController.registerNewPassenger(passenger);
